@@ -2,89 +2,94 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil de Miguel Ángel Núñez Martínez</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguel Núñez</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header class="presentacion">
-        <img src="tu-foto.jpg" alt="Foto de Miguel Ángel Núñez Martínez">
-        <h1>Miguel Ángel Núñez Martínez</h1>
+    <header>
         <nav>
+            <h1>Miguel Núñez</h1>
             <ul>
                 <li><a href="#formacion">Formación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#pasatiempos">Pasatiempos</a></li>
                 <li><a href="#criptografia">Criptografía</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+        <div class="hero">
+            <div class="texto">
+                <h2>Hola, soy Miguel Ángel Núñez Martínez</h2>
+                <p>Estudiante de Ingeniería en Sistemas Computacionales, entusiasta de la ciberseguridad, los
+                    videojuegos y la tecnología.</p>
+                <a href="CV_MiguelNunez.pdf" class="boton" download>Descargar CV</a>
+                <a href="llave_publica.asc" class="boton boton-blanco" download>Descargar llave pública</a>
+            </div>
+            <img src="tu-foto.jpg" alt="Foto de Miguel Núñez">
+        </div>
     </header>
 
     <section id="formacion">
         <h2>Formación Académica</h2>
         <ul>
-            <li>Secundaria: Escuela Secundaria Técnica No. 5</li>
-            <li>Preparatoria: CECyT 9 "Juan de Dios Bátiz"</li>
-            <li>Universidad: Instituto Politécnico Nacional - Ingeniería en Sistemas Computacionales</li>
-        </ul>
-    </section>
-
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Correo: miguel.nunez@example.com</p>
-        <ul>
-            <li><a href="https://www.facebook.com/tuusuario" target="_blank">Facebook</a></li>
-            <li><a href="https://www.linkedin.com/in/tuusuario" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/tuusuario" target="_blank">GitHub</a></li>
+            <li>Secundaria: Secundaria Técnica #5</li>
+            <li>Preparatoria: CECyT 9 “Juan de Dios Bátiz”</li>
+            <li>Licenciatura: Instituto Politécnico Nacional - Ingeniería en Sistemas Computacionales</li>
         </ul>
     </section>
 
     <section id="pasatiempos">
         <h2>Pasatiempos</h2>
-        <div class="pasatiempo">
-            <h3>Videojuegos</h3>
-            <p>Me encanta jugar Halo, Gears of War y Red Dead Redemption.</p>
-            <img src="halo.jpg" alt="Halo">
-        </div>
-        <div class="pasatiempo">
-            <h3>Series Animadas</h3>
-            <p>Hora de Aventura es mi favorita, la disfruto por su profundidad y humor.</p>
-            <img src="hora-de-aventura.jpg" alt="Hora de Aventura">
-        </div>
-        <div class="pasatiempo">
-            <h3>Escuchar música</h3>
-            <p>Disfruto de distintos géneros, especialmente el rock.</p>
-            <video controls src="musica.mp4"></video>
+        <div class="grid">
+            <div>
+                <h3>Halo y Gears of War</h3>
+                <p>Me encanta su historia, jugabilidad y la nostalgia que traen.</p>
+                <img src="halo.jpg" alt="Halo">
+            </div>
+            <div>
+                <h3>Hora de Aventura</h3>
+                <p>Una serie que combina humor, aventura y enseñanzas profundas.</p>
+                <img src="hora.jpg" alt="Hora de Aventura">
+            </div>
+            <div>
+                <h3>Red Dead Redemption</h3>
+                <p>Un mundo abierto increíble con una historia emotiva y profunda.</p>
+                <img src="reddead.jpg" alt="Red Dead Redemption">
+            </div>
         </div>
     </section>
 
     <section id="criptografia">
-        <h2>Datos curiosos sobre criptografía</h2>
-        <div class="dato">
-            <h3>1. Enigma</h3>
-            <p>La máquina Enigma fue usada por los alemanes en la Segunda Guerra Mundial. Su cifrado fue descifrado por
-                Alan Turing.</p>
-            <img src="enigma.jpg" alt="Máquina Enigma">
-        </div>
-        <div class="dato">
-            <h3>2. RSA</h3>
-            <p>RSA es uno de los algoritmos más usados para cifrado de clave pública y se basa en la factorización de
-                números primos grandes.</p>
-            <img src="rsa.jpg" alt="RSA">
-        </div>
-        <div class="dato">
-            <h3>3. Cifrado César</h3>
-            <p>Uno de los cifrados más antiguos, usado por Julio César, que desplazaba letras en el alfabeto.</p>
-            <video controls src="cesar.mp4"></video>
+        <h2>Criptografía</h2>
+        <div class="grid">
+            <div>
+                <h3>Enigma</h3>
+                <p>La famosa máquina alemana usada en la Segunda Guerra Mundial.</p>
+                <img src="enigma.jpg" alt="Enigma">
+            </div>
+            <div>
+                <h3>César</h3>
+                <p>Un cifrado muy antiguo pero con fundamentos básicos importantes.</p>
+                <video src="cesar.mp4" controls></video>
+            </div>
+            <div>
+                <h3>RSA</h3>
+                <p>Base del cifrado moderno, usada en internet, correos y más.</p>
+                <img src="rsa.jpg" alt="RSA">
+            </div>
         </div>
     </section>
 
-    <section class="descargas">
-        <h2>Descargas</h2>
-        <a class="boton" href="CV_MiguelNunez.pdf" download>Descargar CV</a>
-        <a class="boton" href="llave_publica.asc" download>Descargar Llave Pública</a>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Correo: miguel.nunez@example.com</p>
+        <p>
+            <a href="https://github.com/zerothunder" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/miguel-nunez" target="_blank">LinkedIn</a> |
+            <a href="https://facebook.com/miguel.nunez" target="_blank">Facebook</a>
+        </p>
     </section>
 
     <footer>

@@ -1,95 +1,112 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
     background-color: #fff;
     color: #333;
 }
 
-header.presentacion {
-    background-color: #f4d03f;
-    text-align: center;
-    padding: 2rem;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
 }
 
-header.presentacion img {
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid #333;
+nav h1 {
+    font-size: 1.5rem;
+    color: #f4d03f;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin-top: 1rem;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
+    font-weight: 500;
 }
 
-section {
-    padding: 2rem;
-    max-width: 900px;
-    margin: auto;
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #fdfae6;
 }
 
-.pasatiempo,
-.dato {
-    margin-bottom: 2rem;
-}
-
-.pasatiempo img,
-.dato img,
-.dato video,
-.pasatiempo video {
-    width: 100%;
+.hero .texto {
     max-width: 600px;
-    display: block;
-    margin-top: 1rem;
 }
 
-.descargas {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f4d03f;
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+}
+
+.hero img {
+    width: 250px;
+    border-radius: 50%;
+    border: 4px solid #f4d03f;
 }
 
 .boton {
     display: inline-block;
-    padding: 1rem 2rem;
-    margin: 1rem;
-    background-color: #333;
-    color: white;
+    padding: 0.8rem 1.5rem;
+    background-color: #f4d03f;
+    color: #000;
     text-decoration: none;
-    border-radius: 10px;
-    transition: background-color 0.3s;
+    border-radius: 5px;
+    margin-right: 1rem;
+    font-weight: bold;
 }
 
-.boton:hover {
-    background-color: #222;
+.boton-blanco {
+    background-color: white;
+    border: 2px solid #f4d03f;
+}
+
+section {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #f4d03f;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid img,
+.grid video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 1rem;
 }
 
 footer {
+    text-align: center;
+    padding: 1.5rem;
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .pasatiempo img,
-    .dato img,
-    .dato video,
-    .pasatiempo video {
-        max-width: 100%;
-    }
 }
